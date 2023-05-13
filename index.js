@@ -20,7 +20,7 @@ return;
 let bodyContent = JSON.stringify({
   "to":"trigger@applet.ifttt.com",
   "subject":number,
-  "text":`There is ${rain}% chance of rain in your area. IOT based Irrigation has been stopped to save water :-)`,
+  "text":`There is ${rain -20 }% chance of flood in your area. Stay alert and take necessery preacutions :-)`,
   "AuthToken":"NjAwNjA1MzQ0N0BuYXppZg=="
   
   
