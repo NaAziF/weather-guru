@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./login.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>To Register Enter The Mobile Number</h2>
+
+    <label for="username">Mobile Number</label>
+    <input type="text" id="username" name="username" placeholder="Enter Mobile Number">
+    <a href="main.html" onclick="localStorage.setItem('number',document.getElementById('username').value)"> <button
+        type="submit">Register</button></a>
+
+  </div>
+  <script>
+    if (localStorage.getItem("number") != null) {
+      localStorage.clear();
+      window.location.href = "main.html";
+    } else {
+
+    }
+  </script>
+</body>
+
+</html>
