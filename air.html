@@ -39,8 +39,8 @@
     <div class="container">
       <div class="air-quality">
         <h2>Air Quality</h2>
-        <p>Current AQI: <span class="aqi"></span></p>
-        <p>Primary Pollutant: <span class="pollutant"></span></p>
+        <p><b>Current AQI:</b> <span class="aqi" id="air-qua"></span></p>
+        <p><b>Air Pollutants:-></b> <span class="pollutant" id="air-poll"></span></p>
       </div>
     </div>
 
@@ -54,8 +54,8 @@
   </div>
 
   <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
-  <script src="index.js"></script>
-
+<!--  <script src="index.js"></script>
+-->
   <script>
     const menuToggle = document.querySelector('.menu-toggle');
     const navMenu = document.querySelector('.nav-menu');
@@ -65,7 +65,7 @@
       navMenu.classList.toggle('active');
     });
   </script>
-
+<script src="file.js"></script>
   <script>
     if (localStorage.getItem("number") != null) {
       document.getElementById('log-1').innerHTML = "Logout";

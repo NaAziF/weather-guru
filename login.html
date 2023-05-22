@@ -13,11 +13,25 @@
 
     <label for="username">Mobile Number</label>
     <input type="text" id="username" name="username" placeholder="Enter Mobile Number">
-    <a href="main.html" onclick="localStorage.setItem('number',document.getElementById('username').value)"> <button
+    <a href="main.html" onclick="addUser()"> <button
         type="submit">Register</button></a>
 
   </div>
   <script>
+
+function addUser(){
+
+const phoneNumber = document.getElementById('username');
+const phoneRegex = /^[6-9]\d{9}$/;
+
+if (phoneRegex.test(phoneNumber.value)) {
+    console.log("Valid phone number.")
+localStorage.setItem('number',document.getElementById('username').value);
+} else {
+    console.log("Invalid phone number.");
+	alert("invalid number try again");
+}
+}
     if (localStorage.getItem("number") != null) {
       localStorage.clear();
       window.location.href = "main.html";
