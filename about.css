@@ -65,18 +65,28 @@
 
 
   body {
+    background: #06283D;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    color: #fff;
   }
   
   header {
-    background-color: #333;
-    color: #fff;
+    background-color: #fff;
+    color: #333;
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #333;
+    text-decoration: none;
   }
   
   header h1 {
@@ -95,14 +105,13 @@
   }
   
   nav a {
-    color: #fff;
+    color: #333;
     text-decoration: none;
-    font-weight: bold;
     transition: color 0.3s ease;
   }
   
   nav a:hover {
-    color: #ccc;
+    color: #f5a623;
   }
   
   /* Hamburger menu */
@@ -182,6 +191,7 @@
   /* Footer */
   footer {
     background-color: #f2f2f2;
+    color: #333;
     padding: 20px;
     text-align: center;
   }
