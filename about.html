@@ -1,69 +1,54 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <title>About Weather Guru</title>
-  <link rel="stylesheet" type="text/css" href="about.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-
-<body>
-  <header>
-    <h1>Weather Guru</h1>
-    <!-- <div id="menu-icon">&#9776;</div> -->
-    <nav>
+  <head>
+    <title>Weater-Guru-Project</title>
+    <link rel="stylesheet" type="text/css" href="about.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">Weather Guru</h1>
+      <!-- <div id="menu-icon">&#9776;</div> -->
+      <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>About Weather Guru</h2>
+      <p>
+        Weather Guru is an app that provides up-to-date weather information for any location in the world. Whether you're planning a trip, checking the weather for your commute, or just want to stay informed, Weather Guru has you covered.
+      </p>
+      <h3>Features</h3>
       <ul>
-        <li><a href="main.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="profile.html">Profile</a></li>
-        <li><a id="log-1" href="login.html">Logout</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li>Current weather conditions, including temperature, humidity, and wind speed</li>
+        <li>Hourly and daily weather forecasts</li>
+        <li>Real-time air quality data</li>
+        <li>Interactive maps showing radar and satellite imagery</li>
+        <li>Customizable notifications for severe weather alerts</li>
       </ul>
-    </nav>
-  </header>
-  <main>
-    <h2>About Weather Guru</h2>
-    <p>
-      Weather Guru is an app that provides up-to-date weather information for any location in the world. Whether you're
-      planning a trip, checking the weather for your commute, or just want to stay informed, Weather Guru has you
-      covered.
-    </p>
-    <h3>Features</h3>
-    <ul>
-      <li>Current weather conditions, including temperature, humidity, and wind speed</li>
-      <li>Hourly and daily weather forecasts</li>
-      <li>Real-time air quality data</li>
-      <li>Interactive maps showing radar and satellite imagery</li>
-      <li>Customizable notifications for severe weather alerts</li>
-    </ul>
-    <h3>Technology</h3>
-    <p>
-      Weather Guru is built using modern web technologies, including HTML, CSS, and JavaScript. The app uses APIs
-      provided by the National Weather Service and other weather data providers to gather real-time weather information.
-    </p>
-  </main>
-  <footer>
-    <p>&copy; 2023 Weather Guru. All rights reserved.</p>
-  </footer>
-  <script src="about.js"></script>
-  <script>
-    const menuIcon = document.getElementById('menu-icon');
-    const nav = document.querySelector('nav');
+      <h3>Technology</h3>
+      <p>
+        Weather Guru is built using modern web technologies, including HTML, CSS, and JavaScript. The app uses APIs provided by the National Weather Service and other weather data providers to gather real-time weather information.
+      </p>
+    </main>
+    <footer>
+      <p>&copy; 2023 Weather Guru. All rights reserved.</p>
+    </footer>
+    <script src="about.js"></script>
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+const nav = document.querySelector('nav');
 
-    menuIcon.addEventListener('click', toggleMenu);
+menuIcon.addEventListener('click', toggleMenu);
 
-    function toggleMenu() {
-      nav.classList.toggle('menu-active');
-    }
-  </script>
-
-  <script>
-    if (localStorage.getItem("number") != null) {
-      document.getElementById('log-1').innerHTML = "Logout";
-    } else {
-      document.getElementById('log-1').innerHTML = "Login";
-    }
-  </script>
-</body>
-
+function toggleMenu() {
+  nav.classList.toggle('menu-active');
+}
+    </script>
+  </body>
 </html>
